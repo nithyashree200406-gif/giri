@@ -1,0 +1,30 @@
+.booking-banner{
+  padding:100px 20px;
+  text-align:center;
+
+  background:
+  linear-gradient(
+    rgba(44,26,14,.9),
+    rgba(44,26,14,.9)
+  );
+
+  color:white;
+}
+
+.booking-banner h2{
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.booking-banner a{
+  display:inline-block;
+  margin-top:20px;
+
+  padding:15px 35px;
+
+  background:#d4af37;
+  color:black;
+
+  text-decoration:none;
+  border-radius:8px;
+}

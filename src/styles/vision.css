@@ -1,0 +1,35 @@
+.vision-section{
+  padding:100px 10%;
+  background:white;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+  gap:30px;
+}
+
+.vision-card{
+  background:#fffaf4;
+
+  padding:40px;
+
+  border-radius:20px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.vision-card h3{
+  color:#d4af37;
+  margin-bottom:20px;
+}
+
+.vision-card p{
+  line-height:1.8;
+}
+
+.vision-card ul{
+  padding-left:20px;
+}
+
+.vision-card li{
+  margin-bottom:12px;
+}

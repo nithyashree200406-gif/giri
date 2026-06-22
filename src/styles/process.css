@@ -1,0 +1,27 @@
+.process-section{
+  padding:120px 10%;
+  background:#f7f2eb;
+}
+
+.timeline{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.timeline-card{
+  background:white;
+  padding:30px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.timeline-card h3{
+  color:#d4af37;
+  font-size:36px;
+}
+
+.timeline-card h4{
+  margin:15px 0;
+}

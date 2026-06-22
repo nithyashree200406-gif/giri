@@ -1,0 +1,23 @@
+.loader{
+  position:fixed;
+  width:100%;
+  height:100vh;
+
+  background:#1c1209;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  z-index:99999;
+}
+
+.loader-content h1{
+  color:#d4af37;
+  font-size:60px;
+}
+
+.loader-content p{
+  color:white;
+  text-align:center;
+}
