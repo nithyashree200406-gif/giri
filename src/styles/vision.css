@@ -1,35 +1,50 @@
-.vision-section{
-  padding:100px 10%;
-  background:white;
-
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-  gap:30px;
+.vision-mission{
+  padding:120px 8%;
+  background:#f9f9f9;
 }
 
-.vision-card{
-  background:#fffaf4;
+.vision-mission-container{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+  margin-top:50px;
+}
 
+.vision-card,
+.mission-card{
+  background:white;
   padding:40px;
-
   border-radius:20px;
 
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+  transition:.4s;
 }
 
-.vision-card h3{
+.vision-card:hover,
+.mission-card:hover{
+  transform:translateY(-8px);
+
+  box-shadow:
+    0 15px 35px rgba(212,175,55,.25);
+}
+
+.vision-card h3,
+.mission-card h3{
   color:#d4af37;
+  font-size:32px;
   margin-bottom:20px;
 }
 
-.vision-card p{
+.vision-card p,
+.mission-card p{
   line-height:1.8;
+  font-size:18px;
 }
+@media(max-width:768px){
 
-.vision-card ul{
-  padding-left:20px;
-}
-
-.vision-card li{
-  margin-bottom:12px;
+  .vision-mission-container{
+    grid-template-columns:1fr;
+  }
 }

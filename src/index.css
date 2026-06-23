@@ -1,20 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
-body{
-  font-family:'Playfair Display', serif;
-  margin:0;
-  padding:0;
-  overflow-x:hidden;
+
+:root{
+  --gold:#c9a227;
+  --gold-light:#e6c85c;
+  --dark:#1f1f1f;
+  --cream:#faf7f2;
+  --text:#444444;
 }
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Playfair Display', serif;
+  background:var(--cream);
+  color:var(--text);
+  overflow-x:hidden;
+  line-height:1.8;
+}
+
+/* Headings */
 h1,h2,h3,h4,h5,h6{
   font-family:'Cinzel', serif;
+  color:var(--dark);
+  font-weight:600;
 }
+
+/* Section Titles */
 .section-header h2,
 .section-title h2{
   font-family:'Cinzel', serif;
   font-size:48px;
   letter-spacing:2px;
+  color:var(--dark);
+  margin-bottom:15px;
 }
-html{
-  scroll-behavior:smooth;
+
+/* Small Golden Heading */
+.section-header span,
+.section-title span{
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:14px;
+  font-weight:600;
+}
+
+/* Paragraphs */
+p{
+  font-size:18px;
+  color:var(--text);
+}
+
+/* Links */
+a{
+  text-decoration:none;
+  transition:0.3s ease;
+}
+
+a:hover{
+  color:var(--gold);
+}
+
+/* Images */
+img{
+  max-width:100%;
+  display:block;
+}
+.section-header h2,
+.section-title h2{
+  font-size:56px;
+}
+@media(max-width:768px){
+
+  .section-header h2,
+  .section-title h2{
+    font-size:36px;
+  }
+
+}
+.hero-content h1{
+  font-size:5.5rem;
+  letter-spacing:4px;
+  color:white;
+
+  text-shadow:
+    0 4px 15px rgba(0,0,0,0.4);
+}
+.hero-content h2{
+  color:#d4af37;
+  letter-spacing:2px;
 }

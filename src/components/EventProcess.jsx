@@ -1,4 +1,5 @@
 import "../styles/process.css";
+import { motion } from "framer-motion";
 
 function EventProcess() {
   const steps = [
@@ -40,11 +41,27 @@ function EventProcess() {
       <div className="timeline">
 
         {steps.map((step, index) => (
-          <div className="timeline-card" key={index}>
+         <motion.div
+  className="timeline-card"
+  initial={{
+    opacity: 0,
+    scale: 0.5
+  }}
+  whileInView={{
+    opacity: 8,
+    scale: 1
+  }}
+  transition={{
+    duration: 0.8,
+    type: "spring"
+  }}
+  viewport={{ once: true }}
+>
+  
             <h3>{step.number}</h3>
             <h4>{step.title}</h4>
             <p>{step.desc}</p>
-          </div>
+          </motion.div>
         ))}
 
       </div>
