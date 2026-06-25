@@ -4,21 +4,32 @@ function BookingBanner() {
   return (
     <section className="booking-banner">
 
-      <h2>
-        Ready To Create Unforgettable Memories?
-      </h2>
+      <div className="booking-content">
 
-      <p>
-        Weddings • Events • Catering • Decoration
-      </p>
+        <span>Reserve Your Date</span>
 
-      <a
-        href="https://wa.me/919342933620"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Book Now
-      </a>
+        <h2  className="typing-text">
+          Let's Create
+          <br />
+          An Unforgettable Celebration
+        </h2>
+
+        <p>
+          From weddings and receptions to corporate events and
+          grand celebrations, Giri Signature Events transforms
+          your vision into a memorable experience.
+        </p>
+
+        <a
+          href="https://wa.me/919999999999"
+          target="_blank"
+          rel="noreferrer"
+          className="booking-btn"
+        >
+          Get Free Consultation
+        </a>
+
+      </div>
 
     </section>
   );

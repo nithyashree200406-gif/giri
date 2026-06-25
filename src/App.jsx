@@ -1,26 +1,17 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import VisionMission from "./components/VisionMission";
-import Services from "./components/Services";
-import WhyChooseUs from "./components/WhyChooseUs";
-import EventProcess from "./components/EventProcess";
-import Gallery from "./components/Gallery";
-import Testimonials from "./components/Testimonials";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Stats from "./components/Stats";
-import WhatsAppButton from "./components/WhatsAppButton";
-import BookingBanner from "./components/BookingBanner";
-import LoadingScreen from "./components/LoadingScreen";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import "./App.css";
+import LoadingScreen from "./components/LoadingScreen";
+
+import Home from "./pages/Home";
+import AboutPage from "./pages/AboutPage";
+import ServicesPage from "./pages/ServicesPage";
+import GalleryPage from "./pages/GalleryPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
 
-   const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -35,22 +26,23 @@ function App() {
   }
 
   return (
-   <>
-  <Navbar />
-  <Hero />
-  <About />
-  <VisionMission />
-  <Services />
-  <WhyChooseUs />
-  <Stats/>
-  <EventProcess />
-  <Gallery />
-  <Testimonials />
-  <BookingBanner />
-  <Contact />
-  <Footer />
-  <WhatsAppButton />
-</>
+    <BrowserRouter>
+
+      <Routes>
+
+        <Route path="/" element={<Home />} />
+
+        <Route path="/about" element={<AboutPage />} />
+
+        <Route path="/services" element={<ServicesPage />} />
+
+        <Route path="/gallery" element={<GalleryPage />} />
+
+        <Route path="/contact" element={<ContactPage />} />
+
+      </Routes>
+
+    </BrowserRouter>
   );
 }
 

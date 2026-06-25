@@ -1,78 +1,93 @@
-.gallery{
-  padding:120px 8%;
-  background:white;
+.gallery-book-container{
+    min-height:100vh;
+
+    background:linear-gradient(rgb(56, 56, 25),rgb(131, 100, 100),rgb(226, 173, 173),rgb(232, 232, 226));
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    width:100%;
+    padding:40px 20px;
 }
 
-.gallery-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
+.gallery-book-container{
+    min-height:100vh;
+    padding:140px 20px 60px;
 }
 
-.gallery-card{
-  position:relative;
-  overflow:hidden;
-  border-radius:20px;
-  cursor:pointer;
-  box-shadow:0 10px 25px rgba(0,0,0,.12);
+.gallery-title{
+    color:#d4af37;
+    font-size:42px;
+    margin-bottom:25px;
+    text-align:center;
+    letter-spacing:2px;
 }
 
-.gallery-card img{
-  width:100%;
-  height:250px;
-  object-fit:cover;
-  transition:.6s;
+.page{
+    background:#fff8eb;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:15px;
+
+    box-shadow:
+        inset 0 0 25px rgba(0,0,0,.08);
 }
 
-.gallery-card:hover img{
-  transform:scale(1.1);
+.cover{
+    padding:0;
+    overflow:hidden;
+    background:#000;
 }
 
-/* Lightbox */
-
-.lightbox{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-
-  background:rgba(0,0,0,.9);
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  z-index:9999;
+.cover-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    border-radius:2px;
 }
 
-.lightbox-image{
-  max-width:90%;
-  max-height:90%;
-  border-radius:15px;
-  box-shadow:0 0 30px rgba(255,255,255,.2);
-}
-@media(max-width:900px){
+.gallery-page img{
+    width:90%;
+    height:360px;
+    object-fit:cover;
 
-  .gallery-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
+    border-radius:10px;
 }
 
-@media(max-width:600px){
-
-  .gallery-grid{
-    grid-template-columns:1fr;
-  }
-
+.gallery-page h3{
+    margin-top:15px;
+    font-size:22px;
+    color:#222;
 }
-.close-btn{
-  position:absolute;
-  top:30px;
-  right:40px;
 
-  color:white;
-  font-size:40px;
-  cursor:pointer;
+/* ==========================
+   BACK COVER
+========================== */
+
+.back-cover{
+    padding:0;
+    overflow:hidden;
+    background:#000;
+}
+
+.back-cover-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.book-wrapper{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
 }
